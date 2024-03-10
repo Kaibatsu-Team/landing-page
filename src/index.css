@@ -8,4 +8,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+
+@layer utilities {
+  .skills-img {
+    @apply w-[50%] mx-auto m-5 px-10 py-8 ease-in-out transition duration-200 hover:transition hover:ease-in-out hover:duration-200 hover:drop-shadow-img;
+  }
+
+  
 }
