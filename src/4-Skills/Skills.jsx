@@ -18,9 +18,9 @@ import tableau from "/img/svg/tableau.svg";
 
 const Skills = () => {
   return (
-    <div className="font-bold">
+    <div className="p-3">
       <h1 className="cursor-default my-8 font-bold text-center w-full text-4xl px-5 py-3 tracking-tight">Skills</h1>
-      <div className="grid grid-cols-1 w-full">
+      <div className="w-full grid grid-cols-1 justify-items-center items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
         <Image nama={"React JS"} url={react} />
         <Image nama={"Vue JS"} url={vue} />
         <Image nama={"Node JS"} url={node} />

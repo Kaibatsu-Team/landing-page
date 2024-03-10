@@ -11,11 +11,8 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
-
 @layer utilities {
   .skills-img {
-    @apply w-[50%] mx-auto m-5 px-10 py-8 ease-in-out transition duration-200 hover:transition hover:ease-in-out hover:duration-200 hover:drop-shadow-img;
+    @apply w-[50%] mx-auto m-5 px-10 py-8 ease-in-out transition duration-200 hover:transition hover:ease-in-out hover:duration-200 hover:drop-shadow-img sm:px-8 sm:py-6 md:px-4 md:py-2 lg:w-[35%];
   }
-
-  
 }
