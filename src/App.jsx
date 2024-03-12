@@ -1,8 +1,9 @@
 import React from "react";
-import Skills from "../src/4-Skills/Skills";
-import Header from "./Header";
-import Hero from "./Hero";
-import Banner from "./Banner";
+import Skills from "./4-Skills/Skills";
+import Header from "./1-Header/Header";
+import Hero from "./2-Hero/Hero";
+import Banner from "./3-Profiles/Banner";
+import Projects from "./5-Projects/Projects";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Banner />
       <Skills />
+      <Projects />
     </>
   );
 }
