@@ -1,0 +1,58 @@
+[
+  {
+    "nama": "React JS",
+    "url": "/img/svg/react_js.svg"
+  },
+  {
+    "nama": "Vue JS",
+    "url": "/img/svg/vue_js.svg"
+  },
+  {
+    "nama": "Node JS",
+    "url": "/img/svg/node_js.svg"
+  },
+  {
+    "nama": "Mongo DB",
+    "url": "/img/svg/mongo_db.svg"
+  },
+  {
+    "nama": "Laravel",
+    "url": "/img/svg/laravel.svg"
+  },
+  {
+    "nama": "HTML",
+    "url": "/img/svg/html.svg"
+  },
+  {
+    "nama": "CSS",
+    "url": "/img/svg/css.svg"
+  },
+  {
+    "nama": "Javascript",
+    "url": "/img/svg/js.svg"
+  },
+  {
+    "nama": "My SQL",
+    "url": "/img/svg/my_sql.svg"
+  },
+  {
+    "nama": "Postgre SQL",
+    "url": "/img/svg/postgre_sql.svg"
+  },
+  {
+    "nama": "SQL Server",
+    "url": "/img/svg/sql_server.svg"
+  },
+  {
+    "nama": "R",
+    "url": "/img/svg/r.svg"
+  },
+  {
+    "nama": "Python",
+    "url": "/img/svg/python.svg"
+  },
+  {
+    "nama": "Tableau",
+    "url": "/img/svg/tableau.svg"
+  }
+]
