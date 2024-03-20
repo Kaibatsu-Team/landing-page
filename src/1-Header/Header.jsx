@@ -48,7 +48,9 @@ const Header = ({ scrollEffect, teamRef, skillRef, projectRef }) => {
       </div>
 
       <div className="hidden lg:flex justify-between items-center my-16 max-w-7xl mx-auto w-full">
-        <p className="font-semibold text-4xl">Kaibatsu</p>
+        <a className="font-semibold text-4xl" href={"/"}>
+          Kaibatsu
+        </a>
         <ul className="flex list-none gap-x-28 hover:cursor-pointer">
           <li
             className="hover:underline text-xl"
@@ -75,7 +77,7 @@ const Header = ({ scrollEffect, teamRef, skillRef, projectRef }) => {
             Project
           </li>
         </ul>
-        <button className="bg-[#2E3745] font-semibold text-white px-4 py-3 rounded-lg">
+        <button className="bg-[#2E3745] font-semibold text-white px-4 py-3 rounded-lg hover:opacity-90">
           Contact Us
         </button>
       </div>

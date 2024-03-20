@@ -18,8 +18,8 @@ const Hero = () => {
         If you need a modern, interactive, and eye catching application. You’re
         in the right place
       </p>
-      <button className="border border-[#2E3745] font-semibold px-4 py-3 mt-10 rounded-lg">
-        Contact Us
+      <button className="relative px-4 py-3 mt-10 font-semibold rounded-lg overflow-hidden border border-[#2E3745] text-[#2E3745] shadow-2xl transition-all duration-200 before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:m-auto before:h-0 before:w-0 before:rounded-sm before:bg-[#2E3745] before:duration-300 before:ease-out hover:text-white hover:shadow-[#2E3745] hover:before:h-40 hover:before:w-40">
+        <span class="relative z-10">Contact Us</span>
       </button>
     </section>
   );
