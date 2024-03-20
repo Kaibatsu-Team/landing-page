@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 
-const Header = () => {
+const Header = ({ scrollEffect, teamRef, skillRef, projectRef }) => {
   const [isOpen, setOpen] = useState(false);
+
+  const handleScroll = (ref) => {
+    scrollEffect(ref);
+    setOpen(false);
+  };
 
   return (
     <header>
@@ -15,18 +20,60 @@ const Header = () => {
             isOpen ? "flex" : "hidden"
           }`}
         >
-          <li className="my-8 uppercase">Team</li>
-          <li className="my-8 uppercase">Skills</li>
-          <li className="my-8 uppercase">Project</li>
+          <li
+            className="my-8 uppercase"
+            onClick={() => {
+              handleScroll(teamRef);
+            }}
+          >
+            Team
+          </li>
+          <li
+            className="my-8 uppercase"
+            onClick={() => {
+              handleScroll(skillRef);
+            }}
+          >
+            Skills
+          </li>
+          <li
+            className="my-8 uppercase"
+            onClick={() => {
+              handleScroll(projectRef);
+            }}
+          >
+            Project
+          </li>
         </ul>
       </div>
 
       <div className="hidden lg:flex justify-between items-center my-16 max-w-7xl mx-auto w-full">
         <p className="font-semibold text-4xl">Kaibatsu</p>
         <ul className="flex list-none gap-x-28 hover:cursor-pointer">
-          <li className="hover:underline text-xl">Team</li>
-          <li className="hover:underline text-xl">Skills</li>
-          <li className="hover:underline text-xl">Project</li>
+          <li
+            className="hover:underline text-xl"
+            onClick={() => {
+              handleScroll(teamRef);
+            }}
+          >
+            Team
+          </li>
+          <li
+            className="hover:underline text-xl"
+            onClick={() => {
+              handleScroll(skillRef);
+            }}
+          >
+            Skills
+          </li>
+          <li
+            className="hover:underline text-xl"
+            onClick={() => {
+              handleScroll(projectRef);
+            }}
+          >
+            Project
+          </li>
         </ul>
         <button className="bg-[#2E3745] font-semibold text-white px-4 py-3 rounded-lg">
           Contact Us

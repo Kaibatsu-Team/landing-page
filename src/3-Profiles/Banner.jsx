@@ -1,8 +1,8 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-const Banner = () => {
+const Banner = forwardRef((props, ref) => {
   return (
-    <section className="relative mb-60 mt-20 lg:mt-32">
+    <section ref={ref} className="relative mb-60 mt-20 lg:mt-32">
       <div className="bg-[#2E3745] h-64 lg:h-[581px] -z-10 absolute left-0 right-0 -bottom-20 lg:-bottom-32"></div>
       <div className="flex justify-around mb-20">
         <div className="relative overflow-hidden h-fit border-[18px] border-white">
@@ -48,6 +48,6 @@ const Banner = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Banner;
