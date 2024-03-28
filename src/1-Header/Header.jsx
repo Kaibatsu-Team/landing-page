@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import { Squash as Hamburger } from "hamburger-react";
 
-const Header = ({ scrollEffect, teamRef, skillRef, projectRef }) => {
+const Header = ({
+  scrollEffect,
+  teamRef,
+  skillRef,
+  projectRef,
+  contactRef,
+}) => {
   const [isOpen, setOpen] = useState(false);
 
   const handleScroll = (ref) => {
@@ -77,7 +83,12 @@ const Header = ({ scrollEffect, teamRef, skillRef, projectRef }) => {
             Project
           </li>
         </ul>
-        <button className="bg-[#2E3745] font-semibold text-white px-4 py-3 rounded-lg hover:opacity-90">
+        <button
+          className="bg-[#2E3745] font-semibold text-white px-4 py-3 rounded-lg hover:opacity-90"
+          onClick={() => {
+            handleScroll(contactRef);
+          }}
+        >
           Contact Us
         </button>
       </div>

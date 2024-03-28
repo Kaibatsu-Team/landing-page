@@ -10,6 +10,7 @@ function App() {
   const teamRef = useRef(null);
   const skillRef = useRef(null);
   const projectRef = useRef(null);
+  const contactRef = useRef(null);
 
   const scrollEffect = (ref) => {
     window.scrollTo({
@@ -20,12 +21,18 @@ function App() {
 
   return (
     <>
-      <Header scrollEffect={scrollEffect} teamRef={teamRef} skillRef={skillRef} projectRef={projectRef} />
-      <Hero />
+      <Header
+        scrollEffect={scrollEffect}
+        teamRef={teamRef}
+        skillRef={skillRef}
+        projectRef={projectRef}
+        contactRef={contactRef}
+      />
+      <Hero scrollEffect={scrollEffect} contactRef={contactRef} />
       <Banner ref={teamRef} />
       <Skills ref={skillRef} />
       <Projects ref={projectRef} />
-      <Footer />
+      <Footer ref={contactRef} />
     </>
   );
 }
