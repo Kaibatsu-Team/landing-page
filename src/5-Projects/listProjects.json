@@ -1,0 +1,14 @@
+[
+  {
+    "nama": "Splash Estate",
+    "link": "https://github.com/arisandisatria/mern-estate.git",
+    "gambar": "/img/projects/Splash Estate.png",
+    "deskripsi": "Website untuk jual beli dan sewa rumah menggunakan MERN Stack + Tailwind"
+  },
+  {
+    "nama": "Splash AI",
+    "link": "https://github.com/arisandisatria/splash-ai.git",
+    "gambar": "/img/projects/Splash AI.png",
+    "deskripsi": "Website yang menyediakan AI untuk chatbot, mental health companion, code generation, music, generation, and video generation dengan teknologi Next, Tailwind, OpenAI, dan Replicate AI"
+  }
+]

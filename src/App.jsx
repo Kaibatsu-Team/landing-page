@@ -1,9 +1,10 @@
 import React, { useRef } from "react";
-import Skills from "./4-Skills/Skills";
 import Header from "./1-Header/Header";
 import Hero from "./2-Hero/Hero";
 import Banner from "./3-Profiles/Banner";
+import Skills from "./4-Skills/Skills";
 import Projects from "./5-Projects/Projects";
+import Footer from "./6-Footer/Footer";
 
 function App() {
   const teamRef = useRef(null);
@@ -19,16 +20,12 @@ function App() {
 
   return (
     <>
-      <Header
-        scrollEffect={scrollEffect}
-        teamRef={teamRef}
-        skillRef={skillRef}
-        projectRef={projectRef}
-      />
+      <Header scrollEffect={scrollEffect} teamRef={teamRef} skillRef={skillRef} projectRef={projectRef} />
       <Hero />
       <Banner ref={teamRef} />
       <Skills ref={skillRef} />
       <Projects ref={projectRef} />
+      <Footer />
     </>
   );
 }
